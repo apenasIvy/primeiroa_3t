@@ -1,4 +1,4 @@
-let tabuada = 2;
+let tabuada = 3;
 let nome = "evelyn"
 
 function escreva(){
@@ -15,3 +15,10 @@ function escreva(){
     document.write(tabuada + " x 10 = "+(tabuada*1)+"<br");
     document.write("feito por " + nome)
 }
+//for(inicio,validacao,incremento)
+function minhaTabuada(){
+    for(let i = 0: i < 5: i++){
+        document.write("valor do i * " + i)
+    }
+}
+
