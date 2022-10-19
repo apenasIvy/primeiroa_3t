@@ -54,3 +54,21 @@ function calcula(){
     let r = c * 2;
     document.write("resultado: " + r);
 }
+
+let op = " ";
+function calcule(){
+    op = ope;
+}
+
+function calcule(){
+    let v1 = document.getElementById("v1").value;
+    let v2 = document.getElementById("v2").value;
+    let r = 0;
+
+    if(op == "+"){
+        r = Number(v1) + Number(v2);
+    }
+
+    document.getElementById("resultado").innerHTML = r;
+
+}
