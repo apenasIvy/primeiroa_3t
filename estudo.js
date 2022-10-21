@@ -72,3 +72,17 @@ function calcule(){
     document.getElementById("resultado").innerHTML = r;
 
 }
+
+function calcula(){
+    let c = document.getElementById("valor").value;
+    let j = document.getElementById("juros").value;
+    if (!Number(c)){
+        alert("o valor do capital deve ser numerico.")
+        document.getElementById("valor").value = "";
+        document.getElementById("valor").focus();
+        return
+    }
+    let r = c * 2;
+    document.write("resultado: " + r);
+}
+
