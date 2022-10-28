@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
-    <script src="estudio.js"></script>
-</head>
-<body>
-  valor: <input id="valor" type="text"><br>
-  juros(mensai): <input id="juros" type="text">
-  <button onclick="total()"> enviar </button>
+    <title>antonio gabriel</title>
+  <script src="estudo.js"></script>
+  <link rel="stylesheet" href="geral.css">
+  </head>
 
-  <br><br><br><br>
-  valor 1: <input id="v1" type="text">
-  <button onclick="operacao('+')">soma</button>
+<body>
+  <div class="calculadora">
+    <div id="sptotal">
+      <span id="total">total: 0,00</span>
+    </div>
+
+  Capital: <input id="valor" type="text"><br>
+  Juros(mensais): <input id="juros" type="text"><br>
   
+  Nr de Meses: <input id="meses" type="text"><br>
+  <button onclick="calcula()">Enviar</button>
+</div>
+  <br><br><br><br>
+  Valor 1: <input id="v1" type="text"><br>
+  <button onclick="operacao('+')">Somar</button>
+  <button onclick="operacao('-')">Subtrair</button>
+  <button onclick="operacao('*')">Multiplicar</button>
+  <button onclick="operacao('/')">Dividir</button>
+  <div ID="SpListaMeses">
+    <span ID="ListaMeses"></span>
+  </div>
+
   <br>
-  valor2: <input id="v2" type="text"><br>
-  <button onclick="calcule()">calcule</button><br><br>
-  <span id="resiltado">0,00</span>
+  Valor 2: <input id="v2" type="text">
+  <button onclick="calcule('+')">Calcule</button><br><br>
+  <span id="resultado">0,00</span>
+
+
 
 </body>
 </html>
+
