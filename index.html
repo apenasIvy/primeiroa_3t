@@ -7,19 +7,20 @@
     <title>antonio gabriel</title>
   <script src="estudo.js"></script>
   <link rel="stylesheet" href="geral.css">
-  </head>
+</head>
 
 <body>
-  <div class="calculadora">
-    <div id="sptotal">
-      <span id="total">total: 0,00</span>
-    </div>
-
+<div class="calculadora">
+  <div id="sptotal">
+    <span id="total">R$ 0,00</span>
+  </div>
   Capital: <input id="valor" type="text"><br>
   Juros(mensais): <input id="juros" type="text"><br>
-  
   Nr de Meses: <input id="meses" type="text"><br>
   <button onclick="calcula()">Enviar</button>
+  <div id="splistameses">
+    <span id="listameses"></span>
+  </div>
 </div>
   <br><br><br><br>
   Valor 1: <input id="v1" type="text"><br>
@@ -27,10 +28,6 @@
   <button onclick="operacao('-')">Subtrair</button>
   <button onclick="operacao('*')">Multiplicar</button>
   <button onclick="operacao('/')">Dividir</button>
-  <div ID="SpListaMeses">
-    <span ID="ListaMeses"></span>
-  </div>
-
   <br>
   Valor 2: <input id="v2" type="text">
   <button onclick="calcule('+')">Calcule</button><br><br>
@@ -40,4 +37,3 @@
 
 </body>
 </html>
-
