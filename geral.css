@@ -1,1 +1,54 @@
+.calculadora {
+    background: rgb(32, 32, 32);
+    color: black;
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+.calculadora input {
+background:rgb(155, 155, 155);
+color: black;
+border-radius: 9px;
+padding: 5px;
+}
+
+.calculadora input:focus{
+    background: white;
+    color: black;
+}
+.calculadora button{
+    background: rgb(255, 0, 170);
+    color: rgb(255, 238, 0);
+}
+
+#sptotal {
+    background: rgb(161, 158, 158);
+    color: black;
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 10px;
+    
+}
+.calculadora button {
+margin-top: 10px;
+background: rgb(255, 255, 255);
+color: black;
+padding: 3px 13px;
+
+}
+.calculadora button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+#splistameses {
+    text-align: start;
+    border-style:groove;
+    border-color: black;
+    border-width: 2px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    margin-top: 13px;
+}
 
