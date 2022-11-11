@@ -40,36 +40,36 @@ function calcula() {
     let j = document.getElementById("juros").value;
     let t = document.getElementById("meses").value;
 
-if (!Number(c)) {
-    alert("o valor do capital deve ser numerico")
-    document.getElementById("valor").value = "";
-    document.getElementById("valor").focus();
-    return
-}
-if (!Number(j)) {
-    alert("o valor do juros deve ser numerico")
-    document.getElementById("juros").value = "";
-    document.getElementById("juros").focus();
-    return
-}
-if (!Number(t)) {
-    alert("a quantidade de meses deve ser numerico")
-    document.getElementById("meses").value = "";
-    document.getElementById("meses").focus();
-    return
-}
-let r = c;
-let texto = "";
-for (let m = 1; m <= t; m++) {
-    r = c * (1 + (j / 100));
-    c = r;
-    texto +=  m + " : " + moeda(r) + "<br>"
-   // document.write("Mes " + m + " - valor: " + moeda(r) + "<br>");
+    if (!Number(c)) {
+        alert("o valor do capital deve ser numerico")
+        document.getElementById("valor").value = "";
+        document.getElementById("valor").focus();
+        return
+    }
+    if (!Number(j)) {
+        alert("o valor do juros deve ser numerico")
+        document.getElementById("juros").value = "";
+        document.getElementById("juros").focus();
+        return
+    }
+    if (!Number(t)) {
+        alert("a quantidade de meses deve ser numerico")
+        document.getElementById("meses").value = "";
+        document.getElementById("meses").focus();
+        return
+    }
+    let r = c;
+    let texto = "";
+    for (let m = 1; m <= t; m++) {
+        r = c * (1 + (j / 100));
+        c = r;
+        texto += m + " : " + moeda(r) + "<br>"
+        // document.write("Mes " + m + " - valor: " + moeda(r) + "<br>");
 
-}
-document.getElementById("listameses").innerHTML = texto;
-document.getElementById("total").innerHTML = moeda(r);
-//document.write("resultado: " + moeda(r));
+    }
+    document.getElementById("listameses").innerHTML = texto;
+    document.getElementById("total").innerHTML = moeda(r);
+    //document.write("resultado: " + moeda(r));
 }
 
 let op = "";
@@ -98,3 +98,19 @@ function calcule() {
     document.getElementById("resultado").innerHTML = r;
 
 }
+
+ function calculaEGS(){
+    let a = -1;
+    let b = 5;
+    let c = -6;
+    delta = (b*b) - (4*a*c);
+
+    if (delta <0){
+
+    }else {
+        raiz = math.sqrt(delta);
+        x1 = ((-b)+raiz)/(2*a);
+        x2 = ((-b)-raiz)/(2*a);
+    }
+    document.getElementById("raiz").value = delta;
+ }
